@@ -69,7 +69,7 @@ const Index = () => {
             {cards.map((card, index) => (
               <Card key={index} className="bg-zinc-900 border-zinc-800 hover:bg-zinc-800 transition-colors">
                 <CardHeader>
-                  <CardTitle className="flex items-center justify-between">
+                  <CardTitle className="flex items-center justify-between text-white">
                     <span>{card.title}</span>
                     <ChevronRight className="h-5 w-5" />
                   </CardTitle>
