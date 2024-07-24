@@ -24,7 +24,7 @@ const Index = () => {
       {/* Navigation */}
       <nav className="sticky top-0 flex justify-between items-center p-4 bg-black/80 backdrop-blur-sm z-50">
         <div className="flex items-center">
-          <Heart className="h-6 w-6 text-white mr-2" />
+          <Heart className="h-6 w-6 text-white mr-2" fill="currentColor" />
           <span className="text-xl font-bold">lovable</span>
         </div>
         <div className="space-x-4">
