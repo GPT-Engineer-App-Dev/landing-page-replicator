@@ -1,24 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Heart, Code, Zap, Sparkles } from "lucide-react";
+import { Heart, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
   const cards = [
     {
-      icon: <Code className="h-8 w-8 text-purple-500" />,
-      title: "Code Generation",
-      description: "Generate high-quality code based on natural language descriptions."
+      title: "For Everyone",
+      description: "Chat with AI to build and deploy web apps, with no technical knowledge needed."
     },
     {
-      icon: <Zap className="h-8 w-8 text-yellow-500" />,
-      title: "Rapid Prototyping",
-      description: "Quickly build and iterate on software prototypes."
+      title: "For Developers",
+      description: "Collaborate in chat and code with an AI engineer, to build at lightning speed."
     },
     {
-      icon: <Sparkles className="h-8 w-8 text-blue-500" />,
-      title: "AI-Powered Insights",
-      description: "Gain intelligent insights and suggestions for your projects."
+      title: "For Agencies",
+      description: "Partner with AI to streamline web app creation, iteration, and support."
     }
   ];
 
@@ -67,18 +64,18 @@ const Index = () => {
 
         {/* Cards Section */}
         <section className="w-full max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">It starts with an AI software engineer</h2>
+          <h2 className="text-4xl font-bold mb-8">It starts with an AI software engineer.</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {cards.map((card, index) => (
-              <Card key={index} className="bg-gray-800 border-gray-700">
+              <Card key={index} className="bg-zinc-900 border-zinc-800 hover:bg-zinc-800 transition-colors">
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    {card.icon}
+                  <CardTitle className="flex items-center justify-between">
                     <span>{card.title}</span>
+                    <ChevronRight className="h-5 w-5" />
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p>{card.description}</p>
+                  <p className="text-zinc-400">{card.description}</p>
                 </CardContent>
               </Card>
             ))}
